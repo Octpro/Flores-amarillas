@@ -16,9 +16,10 @@ export const PHASE_ONE = {
   letterTitle: 'Una carta para vos',
   // Editá el cuerpo de la carta (párrafos separados).
   letter: [
-    'Hoy empieza la primavera, y con ella esta costumbre linda de buscar el amarillo más cálido para decírtelo sin tantas palabras.',
-    'Las flores amarillas no son solo un gesto de septiembre: son luz, son el color de lo que empieza otra vez, y son la forma más simple que encontré de recordarte que elegirte sigue siendo mi estación favorita.',
-    'Que este ramito digital te encuentre con la misma calidez con la que pensé en vos al armarlo. Te quiero.',
+    'Que feliz soy con vos a mi lado ❤️',
+    'Toda mi vida soñe en compartir la vida con alguien como vos 😘',
+    'Gracias por darme tu amor 😊',
+    'Que este ramito digital te encuentre con la misma calidez con la que pensé en vos al armarlo. Te amo mi bichita. 💕',
   ],
   closing: 'Con todo mi cariño',
 }
@@ -30,9 +31,9 @@ export const PHASE_TWO = {
   // Títulos placeholder para cuando armes el 29.
   timelineHeading: 'Nuestra línea de tiempo',
   galleryHeading: 'Recuerdos en fotos',
-  finaleHeading: 'El mensaje final',
+  finaleHeading: '¡¡Te amoo ❤️❤️!!',
   finaleBody:
-    'Acá va el mensaje del 29. Reemplazalo cuando cargues las fotos y los recuerdos de estos dos años y medio.',
+    'Gracias por estos 2 años y medio!!. Vamos por más??',
 }
 
 /**
@@ -41,36 +42,81 @@ export const PHASE_TWO = {
  */
 export const ANNIVERSARY_TIMELINE = [
   {
-    date: '29 de marzo',
+    date: '29 de marzo 2024',
     title: 'El comienzo',
-    body: 'Un hito para recordar cómo empezó todo. Completá esta tarjeta.',
+    body: 'Una tarde, muy nervioso, te pregunte si querías ser mi novia y ese si le dio vida a esta relación tan hermosa.',
   },
   {
     date: 'Un día cualquiera',
     title: 'Un momento nuestro',
-    body: 'Una anécdota, un viaje o una costumbre que solo entendemos nosotras/nosotros.',
+    body: 'Esos días cuando estamos abrazados, juntos, siendo nosotros. Son momentos que no quiero que terminen nunca.',
   },
   {
     date: '29 de septiembre',
     title: 'Dos años y medio',
-    body: 'El capítulo que se abre hoy. Escribí acá lo que quieras que lea ese día.',
+    body: 'Aprendimos mucho del amor, y te propongo algo, lo hagamos más lindo, más grande y por muchos años.',
   },
 ]
 
 export const ANNIVERSARY_PHOTOS = [
   {
-    src: '',
+    src: '/images/IMG-20240519-WA0004.jpg',
     alt: 'Recuerdo 1',
-    caption: 'Foto 1 — agregá la ruta de la imagen',
+    caption: 'Nuestra primer foto juntos. ❤️',
   },
   {
-    src: '',
+    src: '/images/IMG-20241201-WA0017 (1).jpg',
     alt: 'Recuerdo 2',
-    caption: 'Foto 2 — agregá la ruta de la imagen',
+    caption: 'Acompañado de la mujer mas hermosa del mundoo 😍',
   },
   {
-    src: '',
+    src: '/images/IMG-20241203-WA0010.jpg',
     alt: 'Recuerdo 3',
-    caption: 'Foto 3 — agregá la ruta de la imagen',
+    caption: 'Tenemos que repetirla en un lugar mas caroo',
+  },
+  {
+  src: '/images/IMG-20241203-WA0037.jpg',
+  alt: 'Recuerdo 4',
+  caption: 'Y no podía faltar una de mis fotos favoritas 💕',
+  },
+  {
+  src: '/images/1788970528136.jpg',
+  alt: 'Recuerdo 5',
+  caption: 'Re aesthetic nosotros',
+  },
+  {
+    src: '/images/1788970528094.jpg',
+    alt: 'Recuerdo 6',
+    caption: 'Re finos ellos. Después eructa como camioneroo',
+  },
+  {
+    src: '/images/1788970528045.jpg',
+    alt: 'Recuerdo 7',
+    caption: 'Me encanta tu sonrisitaa gorditaaaaaa 😘',
+  },
+  {
+    src: '/images/1788970527713.jpg',
+    alt: 'Recuerdo 8',
+    caption: 'Había para comer pizza y yo me comí el puchero',
+  },
+  {
+  src: '/images/IMG-20251229-WA0037.jpg',
+  alt: 'Recuerdo 9',
+  caption: 'Quiero muchas mas navidades con vos amoor',
+  },
+  {
+  src: '/images/IMG-20260214-WA0024.jpg',
+  alt: 'Recuerdo 10',
+  caption: 'Segundo 14 de febrero, con una sorpresita que no te esperabas!!',
+  },
+  {
+  src: '/images/IMG-20260328-WA0063.jpg',
+  alt: 'Recuerdo 11',
+  caption: 'Un casamiento juntos, el próximo es el nuestrooo 💕',
+  },
+  {
+  src: '/images/IMG-20260830-WA0009.jpg',
+  alt: 'Recuerdo 12',
+  caption: 'Última salidita con tus papás 😁',
   },
 ]
