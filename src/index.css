@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #fbf7ef;
+  --color-cream-deep: #f3ebd8;
+  --color-gold-soft: #fde047;
+  --color-gold: #facc15;
+  --color-botanical: #4a5d4e;
+  --color-ink: #3f3a32;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: #fbf7ef;
+  color: #3f3a32;
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.letter-enter {
+  animation: letter-fade 900ms ease both;
+}
+
+.bloom-head,
+.stem-grow,
+.leaf-left,
+.leaf-right {
+  transform-box: fill-box;
+}
+
+.stem-grow {
+  transform: scaleY(0.72);
+  opacity: 0.75;
+}
+
+.bloom-head {
+  transform: scale(0.38);
+  opacity: 0.85;
+}
+
+.leaf-left,
+.leaf-right {
+  transform-origin: center;
+  transform: scale(0.2);
+  opacity: 0;
+}
+
+.is-blooming .stem-grow,
+.is-blooming .bloom-head,
+.is-blooming .leaf-left,
+.is-blooming .leaf-right {
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.is-blooming .stem-grow {
+  animation-name: stem-up;
+  animation-duration: 900ms;
+  animation-delay: var(--bloom-delay, 0ms);
+}
+
+.is-blooming .bloom-head {
+  animation-name: head-bloom;
+  animation-duration: 1100ms;
+  animation-delay: calc(var(--bloom-delay, 0ms) + 280ms);
+}
+
+.is-blooming .leaf-left,
+.is-blooming .leaf-right {
+  animation-name: leaf-open;
+  animation-duration: 700ms;
+  animation-delay: calc(var(--bloom-delay, 0ms) + 420ms);
+}
+
+@keyframes stem-up {
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes head-bloom {
+  0% {
+    transform: scale(0.12) rotate(-8deg);
+    opacity: 0.2;
+  }
+  70% {
+    transform: scale(1.06) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes leaf-open {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes letter-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .letter-enter,
+  .is-blooming .stem-grow,
+  .is-blooming .bloom-head,
+  .is-blooming .leaf-left,
+  .is-blooming .leaf-right {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
