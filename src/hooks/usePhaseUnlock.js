@@ -19,18 +19,9 @@ export function usePhaseUnlock() {
   }, [])
 
   const dateUnlocked = now >= UNLOCK_DATE.getTime()
-  const isUnlocked = dateUnlocked || forcedUnlock
+  const isUnlocked = dateUnlocked
 
-  const registerLockClick = useCallback(() => {
-    const t = Date.now()
-    clicksRef.current = clicksRef.current.filter((click) => t - click < CLICK_WINDOW_MS)
-    clicksRef.current.push(t)
-
-    if (clicksRef.current.length >= REQUIRED_CLICKS) {
-      clicksRef.current = []
-      setForcedUnlock(true)
-    }
-  }, [])
+  const registerLockClick = useCallback(() => {}, [])
 
   return {
     isUnlocked,
