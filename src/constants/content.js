@@ -44,7 +44,7 @@ export const ANNIVERSARY_TIMELINE = [
   {
     date: '29 de marzo 2024',
     title: 'El comienzo',
-    body: 'Una tarde, muy nervioso, te pregunte si querías ser mi novia. Ese fue el comienzo de esta relación tan hermosa que construimos juntos 😘.',
+    body: 'Una tarde, muy nervioso, te pregunte si querías ser mi novia. Y ese si, le dio vida a esta relación tan hermosa que tenemos 😘.',
   },
   {
     date: 'Un día cualquiera',
