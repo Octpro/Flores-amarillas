@@ -49,12 +49,12 @@ export const ANNIVERSARY_TIMELINE = [
   {
     date: 'Un día cualquiera',
     title: 'Un momento nuestro',
-    body: 'Esos días cuando estamos abrazados, juntos, siendo nosotros. Son momentos que no quiero que terminen nunca.',
+    body: 'Esos días cuando estamos abrazados, juntos, siendo nosotros. Son esos momentos que no quiero que terminen nunca.',
   },
   {
     date: '29 de septiembre',
     title: 'Dos años y medio',
-    body: 'Aprendimos mucho del amor, y te propongo algo, lo hagamos más lindo, más grande y por muchos años.',
+    body: 'Aprendimos mucho del amor, y te propongo algo, lo sigamos haciendo más lindo, más grande y por muchos años más.',
   },
 ]
 
