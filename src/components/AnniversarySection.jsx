@@ -47,10 +47,14 @@ export default function AnniversarySection() {
               <div className="px-6 text-center">
                 <Heart className="mx-auto h-8 w-8 text-amber-400" aria-hidden />
                 <p className="mt-3 font-serif text-lg text-ink/80">{photo.alt}</p>
-                <p className="mt-1 font-sans text-xs text-ink/50">{photo.caption}</p>
               </div>
             )}
           </div>
+          {photo.caption?.trim() && (
+            <p className="mt-3 px-4 text-center font-sans text-sm leading-relaxed text-stone-700">
+              {photo.caption}
+            </p>
+          )}
           <div className="flex items-center justify-between px-3 py-3">
             <button
               type="button"
